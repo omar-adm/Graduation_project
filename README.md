@@ -1,4 +1,4 @@
-this is berife listibg of the tools used for the project and the methods 
+this is berife listing of the tools and methods used for the project  
 
 vs code for writing code
 Microsoft word for paper thesis  
