@@ -43,7 +43,7 @@ export function HealthRiskFormComponent() {
 
   const sendFormData = async (data) => {
     try {
-      const response = await fetch('/api/predict', {
+      const response = await fetch('https://vercel.com/omar-adms-projects/health-risk-assessment-backend/BgnBXNZhfSM3xv9gHZ6vw49SzPZX', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -128,15 +128,15 @@ export function HealthRiskFormComponent() {
 
           <div className="space-y-4">
             {[
-              { name: 'Family_Diabetes', label: 'Family History of Diabetes' },
-              { name: 'highBP', label: 'High Blood Pressure' },
-              { name: 'PhysicallyActive', label: 'Physically Active' },
-              { name: 'Smoking', label: 'Smoking' },
-              { name: 'Alcohol', label: 'Alcohol Consumption' },
-              { name: 'RegularMedicine', label: 'Regular Medicine' },
-              { name: 'JunkFood', label: 'Junk Food Consumption' },
-              { name: 'Stress', label: 'High Stress Levels' },
-              { name: 'Pdiabetes', label: 'Prediabetes' },
+              { name: 'Family_Diabetes', label: 'Do you have History of Family Diabetes?' },
+              { name: 'highBP', label: 'Do you have High Blood Pressure?' },
+              { name: 'PhysicallyActive', label: 'Are you Physically Active?' },
+              { name: 'Smoking', label: 'Do you Smoke?' },
+              { name: 'Alcohol', label: 'Do you consumpt Alcohol?' },
+              { name: 'RegularMedicine', label: 'Do you maintain Regular Medicine?' },
+              { name: 'JunkFood', label: 'Do you eat Junk Food?' },
+              { name: 'Stress', label: 'Do you have High Stress Levels?' },
+              { name: 'Pdiabetes', label: 'Do you have Prediabetes?' },
             ].map((item) => (
               <div key={item.name} className="space-y-2">
                 <Label>{item.label}</Label>
